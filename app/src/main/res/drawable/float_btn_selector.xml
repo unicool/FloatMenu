@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_selected="true">
+        <layer-list>
+            <item>
+                <shape android:innerRadius="29dp" android:shape="ring" android:thickness="3dp" android:useLevel="false">
+                    <size android:width="64dp" android:height="64dp" />
+                    <solid android:color="#37FF6600" />
+                </shape>
+            </item>
+            <item android:gravity="center">
+                <shape android:innerRadius="0dp" android:shape="ring" android:thickness="29dp" android:useLevel="false">
+                    <solid android:color="#FF6600" />
+                </shape>
+            </item>
+            <item android:drawable="@drawable/logo_gray" android:gravity="center" android:left="1dp" android:top="2dp" />
+            <item android:drawable="@drawable/logo_white" android:gravity="center" />
+        </layer-list>
+    </item>
+
+
+    <item android:state_selected="false">
+        <layer-list>
+            <item>
+                <shape android:innerRadius="29dp" android:shape="ring" android:thickness="3dp" android:useLevel="false">
+                    <size android:width="64dp" android:height="64dp" />
+                    <solid android:color="#37FF6600" />
+                </shape>
+            </item>
+            <item android:gravity="center">
+                <shape android:innerRadius="27dp" android:shape="ring" android:thickness="2dp" android:useLevel="false">
+                    <solid android:color="#FF6600" />
+                </shape>
+            </item>
+            <item android:gravity="center">
+                <shape android:shape="oval">
+                    <size android:width="54dp" android:height="54dp" />
+                    <solid android:color="#e6FFFFFF" />
+                </shape>
+            </item>
+            <item android:drawable="@drawable/logo_gray" android:gravity="center" android:left="1dp" android:top="2dp" />
+            <item android:drawable="@drawable/logo" android:gravity="center" />
+        </layer-list>
+    </item>
+
+
+</selector>

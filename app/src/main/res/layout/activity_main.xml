@@ -1,0 +1,97 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#35a0ad">
+
+    <FrameLayout
+        android:id="@+id/layout_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="30dp"
+        android:background="@drawable/float_btns_bg"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/iv_start"
+            style="@style/float_menu_style"
+            android:layout_marginLeft="48dp"
+            android:drawableTop="@drawable/btn_task_start"
+            android:text="@string/start_task" />
+
+        <TextView
+            android:id="@+id/iv_stop"
+            style="@style/float_menu_style"
+            android:layout_marginLeft="112dp"
+            android:drawableTop="@drawable/btn_task_stop"
+            android:text="@string/stop_task" />
+
+        <TextView
+            android:id="@+id/iv_switch"
+            style="@style/float_menu_style"
+            android:layout_marginLeft="176dp"
+            android:drawableTop="@drawable/btn_script_switch"
+            android:text="@string/script_switch" />
+
+        <TextView
+            android:id="@+id/iv_exit"
+            style="@style/float_menu_style"
+            android:layout_marginLeft="240dp"
+            android:drawableTop="@drawable/btn_exit"
+            android:text="@string/exit_task" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/iv_float"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="30dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/float_btn_selector" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:onClick="abcd"
+            android:text="ABCD" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:onClick="bcd"
+            android:text="BCD" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:onClick="abc"
+            android:text="ABC" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:onClick="eeee"
+            android:text="abcd" />
+    </LinearLayout>
+
+</FrameLayout>
