@@ -143,7 +143,7 @@ public class OnTouchViewMover implements OnTouchListener {
                     float tY = viewToMove.getY();
                     if (viewToMove.getY() <= 0) {
                         tY = 0;
-                    } else if (viewToMove.getY() >= mScreenSize[1] - viewToMoveSize[1] - mStatusBarHeight + viewToMoveSize[0]) {
+                    } else if (viewToMove.getY() >= mScreenSize[1] - viewToMoveSize[1] - mStatusBarHeight) {
                         tY = mScreenSize[1] - viewToMoveSize[1] - mStatusBarHeight;
                     }
                     viewToMove.animate().x(tX).y(tY).setDuration(300).start();
