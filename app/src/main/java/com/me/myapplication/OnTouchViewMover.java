@@ -136,9 +136,9 @@ public class OnTouchViewMover implements OnTouchListener {
                 } else {
                     float tX = 0;
                     if (mMenuBarLocation) {
-                        tX = ViewUtil.dip2px(viewToMove.getContext(), 30);
+                        tX = mStatusBarHeight;
                     } else {
-                        tX = mScreenSize[0] - viewToMoveSize[0] - ViewUtil.dip2px(viewToMove.getContext(), 30);
+                        tX = mScreenSize[0] - viewToMoveSize[0] - mStatusBarHeight;
                     }
                     float tY = viewToMove.getY();
                     if (viewToMove.getY() <= 0) {
